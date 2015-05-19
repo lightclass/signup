@@ -1,0 +1,14 @@
+{
+  "name": "signup",
+  "version": "0.0.0",
+  "authors": [
+    "xinnix2000 <xinnix2000@gmail.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  }
+}

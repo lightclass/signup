@@ -1,0 +1,42 @@
+extends ../layout
+
+block content
+  .container
+    .row
+      form.form-horizontal(method="post",action="/members/add/")
+        fieldset
+          .form-group
+            .col-xs-8.col-xs-offset-2
+              input#inputName.form-control(type="text",name='name',placeholder="姓名",value="")
+          .form-group
+            .col-xs-8.col-xs-offset-2
+              input#inputName.form-control(type="text",name='age',placeholder="请填写年龄",value="")
+          .form-group
+            .col-xs-8.col-xs-offset-2
+              input#inputName.form-control(type="text",name='telphone',placeholder="电话",value="")
+          .form-group
+            .col-xs-8.col-xs-offset-2
+              label.control-label 感兴趣的课程
+              .controls
+                // Inline Checkboxes
+                label.checkbox-inline
+                  input(name='interest',type="checkbox", value="语文")
+                  语文
+                label.checkbox-inline
+                  input(name='interest',type="checkbox", value="数学")
+                  数学
+                label.checkbox-inline
+                  input(name='interest',type="checkbox", value="英语")
+                  英语
+                label.checkbox-inline
+                  input(name='interest',type="checkbox", value="物理")
+                  物理
+                label.checkbox-inline
+                  input(name='interest',type="checkbox", value="化学")
+                  化学
+          .form-group
+            .col-xs-8.col-xs-offset-2
+              label 建议或意见
+              textarea.form-control(name='msg',row="6")
+          .form-group    
+              button.col-xs-6.col-xs-offset-3.btn.btn-primary(type="submit") 报名
